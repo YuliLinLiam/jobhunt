@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>求职工作台</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#128188;</text></svg>">
+</head>
+<body>
+
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <b>求职工作台</b>
+      <span>Jobhunt Desk</span>
+    </div>
+    <nav class="nav" id="nav">
+      <button data-page="today" class="on">今日总览</button>
+      <button data-page="jobs">岗位清单<span class="pill" id="pill-jobs">0</span></button>
+      <button data-page="board">投递台账</button>
+      <button data-page="calendar">DDL 日历</button>
+      <button data-page="funnel">漏斗</button>
+      <button data-page="add">录入岗位</button>
+    </nav>
+    <div class="side-foot">
+      数据在本机 <code>data/jobs.db</code><br>
+      不联网，不上传
+    </div>
+  </aside>
+
+  <main class="main" id="main"></main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer">
+  <header>
+    <div>
+      <h2 id="dw-title">岗位</h2>
+      <div class="m" id="dw-sub"></div>
+    </div>
+    <button class="btn ghost small" id="dw-close">关闭</button>
+  </header>
+  <div class="body" id="dw-body"></div>
+  <footer>
+    <button class="btn danger small" id="dw-delete">删除</button>
+    <button class="btn primary" id="dw-save">保存</button>
+  </footer>
+</aside>
+
+<div class="toast" id="toast"></div>
+
+<script src="/app.js"></script>
+</body>
+</html>

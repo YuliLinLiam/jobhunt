@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>产品岗（校招） - 汇添富基金 - 校园招聘</title>
+<meta property="og:title" content="产品岗（校招）">
+</head>
+<body>
+<h1 class="position-name">产品岗（校招）</h1>
+<div class="job-location">工作地点：上海</div>
+
+<div class="job-detail">
+  <h2>岗位职责</h2>
+  <p>1. 新产品设计与申报：市场竞品调研、撰写基金合同与招募说明书。</p>
+  <p>2. 存续产品管理与跨部门协调。</p>
+  <h2>任职要求</h2>
+  <p>2027 届硕士及以上，金融、经济、统计相关专业。</p>
+</div>
+
+<form id="apply">
+  <div><label for="name">姓名*</label><input id="name" name="name" type="text" required></div>
+  <div><label for="phone">手机号（必填）</label><input id="phone" name="phone" type="text"></div>
+  <div><label for="email">邮箱 ＊</label><input id="email" name="email" type="text" value="tian@example.com"></div>
+  <div><label for="school">毕业院校</label><input id="school" name="school" type="text"></div>
+  <div><label for="note">备注（选填）</label><textarea id="note" name="note"></textarea></div>
+  <div><label for="intro">自我介绍 *</label><textarea id="intro" name="intro"></textarea></div>
+  <div><label for="city">期望城市</label><input id="city" name="city" type="text" aria-required="true"></div>
+  <div><label for="resume">简历附件*</label><input id="resume" name="resume" type="file"></div>
+  <button type="submit">提交</button>
+</form>
+
+<script>
+window.__formSubmitted = false;
+document.getElementById("apply").addEventListener("submit", function (event) {
+  event.preventDefault();
+  window.__formSubmitted = true;
+});
+</script>
+</body>
+</html>

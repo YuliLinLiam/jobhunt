@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "秋招填表助手",
+  "version": "1.2.0",
+  "description": "在你自己的浏览器里填写网申表单、一键把岗位存进求职看板；永远不自动提交",
+  "minimum_chrome_version": "114",
+  "permissions": [
+    "storage",
+    "scripting",
+    "sidePanel"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "side_panel": {
+    "default_path": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

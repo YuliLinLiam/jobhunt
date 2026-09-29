@@ -1,0 +1,11 @@
+{
+  "remind_days": 1,
+  "smtp": {
+    "host": "smtp.qq.com",
+    "port": 465,
+    "ssl": true,
+    "user": "你的邮箱@qq.com",
+    "password": "邮箱授权码，不是登录密码",
+    "to": "收提醒的邮箱，留空就发给自己"
+  }
+}

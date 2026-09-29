@@ -1,0 +1,13 @@
+{
+  "name": "jobhunt-filler",
+  "version": "1.2.0",
+  "private": true,
+  "description": "秋招填表助手：网申自动填表 + 一键存岗位到求职看板，不自动提交",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/*.js",
+    "check": "npm test"
+  }
+}
